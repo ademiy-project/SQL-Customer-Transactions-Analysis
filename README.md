@@ -57,3 +57,29 @@ SQL (MySQL 8.0): CTEs, window functions, CASE, date functions
    `mysql -u root -p < FP_DB.sql`
 2. Open `FINAL_PROJECT_Customers_Transactions.sql` and run the queries (the file starts with `USE finalproject;`).
 3. Optional: uncomment the `CREATE INDEX` lines at the top to make the JOINs faster.
+
+## Topics Covered
+**SQL Techniques**
+- CTEs (`WITH` clauses)
+- Window functions: `SUM() OVER()`, `AVG() OVER()`, `PARTITION BY`
+- Aggregations: `SUM`, `COUNT`, `COUNT(DISTINCT)`, `AVG`
+- `LEFT JOIN` between customers and transactions
+- `CASE WHEN` for segmentation and age binning
+- NULL handling: `COALESCE`, `NULLIF`, `TRIM`
+- Date functions: `DATE_FORMAT`, `YEAR`, `QUARTER`
+- Session variables (`SET @date_from`) for a flexible reporting period
+- Indexes for JOIN performance optimization
+
+**Analytics**
+- Customer analytics and customer behavior analysis
+- Customer retention: clients with continuous 12-month activity
+- Average check (AOV), average monthly spend, number of operations
+- Monthly KPIs: active customers, operations, revenue
+- Share of total (% of operations and % of revenue)
+- Gender analysis (M / F / NA) with share of spending
+- Customer segmentation by age groups (10-year bins)
+- Quarterly trend analysis
+- Data quality handling (missing gender and age)
+
+## Keywords
+`sql` `mysql` `data-analysis` `customer-analytics` `retention-analysis` `customer-segmentation` `cte` `window-functions` `aggregation` `joins` `kpi` `average-check` `cohort-analysis` `demographic-analysis` `time-series` `business-analytics` `data-analyst` `portfolio-project`
